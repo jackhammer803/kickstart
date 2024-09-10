@@ -3,8 +3,8 @@
 yum check-update
 yum update -y
 yum install httpd -y 
-systemct1 start httpd  
-systemct1 enable  httpd
+systemctl start httpd  
+systemctl enable  httpd
 cd /var/www/html
 echo penis > index.html
-systemct1 stop firewalld
+systemctl stop firewalld
